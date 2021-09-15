@@ -4,9 +4,27 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+const initialFormValues={
+  membername:'',
+  email:'',
+  role:'',
+
+} 
+const memberMember=[
+  {membername:'Jason',email:'jasonemail@email.com',role:'Frontend'},
+  {membername:'mark',email:'markemail@email.com',role:'Frontend'},
+  {membername:'sam',email:'samemail@email.com',role:'Frontend'},
+  {membername:'isac',email:'isacemail@email.com',role:'Frontend'},
+  {membername:'john',email:'johnemail@email.com',role:'Frontend'},
+]
+
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    <App initialFormValues={initialFormValues} memberMember={memberMember} />
   </React.StrictMode>,
   document.getElementById('root')
 );
